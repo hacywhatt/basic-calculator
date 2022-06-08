@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <tittle>Basit Hesap Makinesi </tittle>
+        <link rel="stylesheet" href="./hesap_makinesi.css" />
+    </head>
+    <body>
+    <table class="calc">
+        <tr>
+            <td colspan="3" class="outputtext">
+                <input class="display-box" type="text" id="result" disabled />
+            </td>
+            <td>
+                <!-- clearScreen() fonksiyonu bütün değerleri temizler-->
+                <input
+                class="button"
+                type="button"
+                value="C"
+                onclick="clearScreen( )"
+                style="background-color: #fb01"
+                />
+            </td>
+        </tr>
+        <td>
+            <!-- display() fonksiyonu tıklanan butonun değerini gösterir-->
+            <input
+            class="button" type="button" value="1"
+            onclick="display('1')"
+            />
+        </td>
+        <td>
+            <input
+            class="button" type="button" value="2"
+            onclick="display('2')"
+            />
+        </td>
+        <td>
+            <input
+            class="button" type="button" value="3"
+            onclick="display('3')"
+            />
+        </td>
+        <td>
+            <input
+            class="button" type="button" value="/"
+            onclick="display('/')"
+            />
+        </td>
+<tr>
+    <td>
+        <input
+        class="button" type="button" value="4"
+        onclick="display('4')"
+        />
+    </td>
+
+    <td>
+            <input
+            class="button" type="button" value="5"
+            onclick="display('5')"
+            />
+     </td>
+
+
+    <td>
+        <input
+        class="button" type="button" value="6"
+        onclick="display('6')"
+        />
+    </td>
+
+    <td>
+                <input
+                class="button" type="button" value="-"
+                onclick="display('-')"
+                />
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input
+        class="button" type="button" value="7"
+        onclick="display('7')"
+        />
+    </td>
+    <td>
+        <input
+        class="button" type="button" value="8"
+        onclick="display('8')"
+        />
+    </td>
+    <td>
+        <input
+        class="button" type="button" value="9"
+        onclick="display('9')"
+        />
+    </td>
+    <td>
+        <input
+        class="button" type="button" value="+"
+        onclick="display('+')"
+        />
+    </td>
+</tr>
+<tr>
+    
+    <td>
+        <input
+        class="button" type="button" value="."
+        onclick="display('.')"
+        />
+    </td>
+    <td>
+        <input
+        class="button" type="button" value="0"
+        onclick="display('0')"
+        />
+    </td>
+    <td>
+        <input
+        class="button" type="button" value="*"
+        onclick="display('*')"
+        />
+    </td>
+    <td>
+        <!--calculate() fonksiyonu matematiksel fonksiyonu değerlendirir-->
+        <input
+        class="button" type="button" value="="
+        onclick="calculate()"
+        style="background-color: #fb01"
+        />
+    </td>
+</tr>
+
+
+
+
+
+
+
+
+    </table>
+    <script type="text/javascript" src="./hesap_makinesi.js"></script>
+    </body>
+</html>
+
+
